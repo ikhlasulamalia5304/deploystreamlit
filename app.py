@@ -95,9 +95,6 @@ if st.button('Prediksi Risiko Anemia', type="primary"):
     
     st.markdown("---")
     st.caption("Aplikasi ini dibuat menggunakan model XGBoost dengan Feature Engineering rasio Hb/MCV.")
-```eof
-
----
 
 ## 🚀 Langkah Terakhir (Wajib Dijalankan)
 
