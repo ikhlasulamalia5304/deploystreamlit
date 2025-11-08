@@ -44,7 +44,7 @@ with col1:
     mcv = st.number_input('3. MCV (fL)', min_value=0.0, max_value=150.0, value=85.0)
 
 with col2:
-    # FITUR MCHC DITAMBAHKAN DI SINI
+    # FITUR MCHC DITAMBAHKAN DI SINI UNTUK MEMENUHI 6 FITUR SCALER
     mchc = st.number_input('4. MCHC (g/dL)', min_value=0.0, max_value=50.0, value=33.0) 
     gender = st.selectbox('5. Jenis Kelamin', ['Wanita', 'Pria'])
 
@@ -95,17 +95,3 @@ if st.button('Prediksi Risiko Anemia', type="primary"):
     
     st.markdown("---")
     st.caption("Aplikasi ini dibuat menggunakan model XGBoost dengan Feature Engineering rasio Hb/MCV.")
-
-## 🚀 Langkah Terakhir (Wajib Dijalankan)
-
-Setelah Anda menyimpan *file* `app.py` yang diperbaiki ini:
-
-1.  **Commit dan Push** di Git Bash:
-    ```bash
-    git add .
-    git commit -m "FINAL FIX: Added MCHC and fixed feature list to 6 features for scaler compatibility. App should run now."
-    git push origin main
-    ```
-2.  **Restart** aplikasi Anda di Streamlit Cloud.
-
-*Error* `ValueError` akan hilang, dan aplikasi Anda harus berjalan dengan sempurna. **Semangat!**
